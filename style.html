@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(252, 249, 249);
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.938);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 10%;
+  padding: 8px;
+  margin: 1px 1px 1px 1px;
+  display: inline-block;
+  border: none;
+  background: #faf5f5;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #6e9cd4;
+  color: white;
+  padding: 16px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(90, 90, 195);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #fcf8f8;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1><img src="./image_search_1671452359680.png" alt="google" width="400"></h1>
+    <p>To create an google account.</p>
+    <hr>
+
+    <input type="text" placeholder="First name" name="first name" id="first name">
+    <input type="text" placeholder="Last name" name="last name" id="last name">
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <hr>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <hr>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
